@@ -13,6 +13,7 @@ AutomationTesting
  * Folder estructure
 ---------------------
 webdriverio-test
+
 ├── nodule_modules
 │   
 ├── test
