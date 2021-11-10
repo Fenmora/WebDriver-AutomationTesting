@@ -45,41 +45,4 @@ describe("Swag Labs -> Cart Operation", () => {
         await browser.pause(3000);
     });
 
-    // //Checkout my personal information 
-    // it('Checkout my personal information and purchase summary ', async () => {
-
-    //     // setting data 
-    //     await login.submitPersonalInfo('Fender Josue', 'Mora Calero', '14100');
-    //     await browser.pause(1000);
-
-    //     expect(browser).toHaveUrl('/checkout-step-one.html');
-    //     await browser.pause(1000);
-
-    // });
-
 });
-
-//     //Checkout my personal information 
-//     it('Validate that “THANK YOU FOR YOUR ORDER” is displayed ', async () => {
-
-//         //moving to Finish Page
-//         login.finishShopping();
-
-//         //Url Validation
-//         await browser.pause(2000);
-//         expect(browser).toHaveUrl('/checkout-complete.html');
-
-//         //searching by tag Title h2
-//         const classNameAndText = await $('<h2 />')
-
-//         //waiting to response
-//         await browser.pause(1000);
-
-//         //expect validation of the test
-//         expect(await classNameAndText.getText()).toContain(
-//             'THANK YOU FOR YOUR ORDER',
-//             'Wrong Message',
-//         );
-//     });
-
-// });
