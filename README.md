@@ -10,6 +10,7 @@ AutomationTesting
 * ----------------------------------------------------------------------------------
 
 Project Sctructure
+
 my-app/
   README.md
   node_modules/
