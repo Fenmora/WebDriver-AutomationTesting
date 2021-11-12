@@ -40,9 +40,6 @@ By default the individual tests will be executed. if you want to run all automat
 
 1. go to my-app/Test/wdio.conf.js and go to the line #24 and replace the next code to run the entire flow linearly
 
-    /***
-     * Run test individual or all flow
-     */
     specs: [
         
         // inidivual test
