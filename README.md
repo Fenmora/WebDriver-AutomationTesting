@@ -9,28 +9,44 @@ AutomationTesting
 * @email        fenmora@outlook.es
 * ----------------------------------------------------------------------------------
 
----------------------
- * Folder estructure
----------------------
-webdriverio-test
+Project Sctructure
+my-app/
+  README.md
+  node_modules/
+  Test/
+     wdio.conf.js
+     pageobjects/
+     utilities/
+     Specs/
+       SwagLabsAllFlow.js
+        Pageobject/
+          CartOperation.css
+          CheckOutOverView.js
+          InventoryOperation.js
+          LoginOperation.js
 
-├── nodule_modules
-│   
-├── test
-│      ├── pageobjects
-│      ├── specs
-│         ├── swagTest
-│         └── SwagLabsAllFlow.js            
-└── wdio.conf
 
-------------------------------------------------------------------------------------
- * Run test individual or all flow
-------------------------------------------------------------------------------------
- specs: [
+
+Install dependencies
+
+npm install (once all the packages are installed).
+
+Run the project 
+
+npx wdio wdio.conf.js 
+
+By default the individual tests will be executed. if you want to run all automation tests in one flow, you need to do the following modification.
+
+1. go to my-app/Test/wdio.conf.js and go to the line #24 and replace the next code to run the entire flow linearly
+
+    /***
+     * Run test individual or all flow
+     */
+    specs: [
         
-        // inidividual test
+        // inidivual test
         "./test/specs/swagTest/*.js",
 
-        // Uncomment this to run all flow
+        // all flow test
         // './test/specs/*.js'
-    ]
+    ],
