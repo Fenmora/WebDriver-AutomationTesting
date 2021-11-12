@@ -10,7 +10,7 @@ AutomationTesting
 * ----------------------------------------------------------------------------------
 
 Project Sctructure
-
+```
 my-app/
   README.md
   node_modules/
@@ -25,16 +25,16 @@ my-app/
           CheckOutOverView.js
           InventoryOperation.js
           LoginOperation.js
-
+```
 
 
 Install dependencies
 
-npm install (once all the packages are installed).
+-npm install (once all the packages are installed).
 
 Run the project 
 
-npx wdio wdio.conf.js 
+-npx wdio wdio.conf.js 
 
 By default the individual tests will be executed. if you want to run all automation tests in one flow, you need to do the following modification.
 
