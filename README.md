@@ -42,9 +42,6 @@ By default the individual tests will be executed. if you want to run all automat
 
     specs: [
         
-        // inidivual test
-        "./test/specs/swagTest/*.js",
-
         // all flow test
-        // './test/specs/*.js'
+        './test/specs/*.js'
     ],
